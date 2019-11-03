@@ -36,6 +36,8 @@ Environment:
 
 #include "arch_x64.h"
 
+#include "../../Common/config.h"
+
 //=============================================================================
 // Environment
 //=============================================================================
@@ -56,7 +58,7 @@ C_ASSERT(sizeof(UINT64) == sizeof(double));
 //=============================================================================
 // Names
 //=============================================================================
-#define VVMM_DRIVER_NAME_W          L"vivienne"
+#define VVMM_DRIVER_NAME_W          CFG_DEVICE_NAME_VIVIENNE_VMM_U
 #define VVMM_LOCALDEVICE_PATH_W     (L"\\\\.\\" VVMM_DRIVER_NAME_W)
 #define VVMM_NT_DEVICE_NAME_W       (L"\\Device\\" VVMM_DRIVER_NAME_W)
 #define VVMM_SYMLINK_NAME_W         (L"\\DosDevices\\" VVMM_DRIVER_NAME_W)

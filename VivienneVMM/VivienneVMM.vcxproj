@@ -131,6 +131,7 @@
     <FilesToPackage Include="$(TargetPath)" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Common\config.h" />
     <ClInclude Include="..\common\arch_x64.h" />
     <ClInclude Include="..\common\driver_io_types.h" />
     <ClInclude Include="..\common\time_util.h" />

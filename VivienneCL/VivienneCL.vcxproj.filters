@@ -9,6 +9,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="PareidoliaCL">
+      <UniqueIdentifier>{57b5dde4-b0df-4416-ab35-a1f1dd97504a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -63,6 +66,12 @@
     </ClInclude>
     <ClInclude Include="debug.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PareidoliaCL\log.h">
+      <Filter>PareidoliaCL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\config.h">
+      <Filter>PareidoliaCL</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

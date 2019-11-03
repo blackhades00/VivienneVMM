@@ -26,6 +26,8 @@ Environment:
 
 #pragma once
 
+#include "../../Common/config.h"
+
 //=============================================================================
 // Features
 //=============================================================================
@@ -49,12 +51,12 @@ Environment:
 /*
     The NT file path used to store the log file.
 */
-#define CFG_LOGFILE_NTPATH_W    L"\\SystemRoot\\vivienne.log"
+#define CFG_LOGFILE_NTPATH_W    CFG_VIVIENNE_VMM_LOG_FILE_NT_PATH_U
 
 /*
     Delete the log file, if it exists, when the driver is loaded.
 */
-///#define CFG_DELETE_EXISTING_LOGFILE
+#define CFG_DELETE_EXISTING_LOGFILE
 
 /*
     Enable logging of MovDr VM exit events.
@@ -89,7 +91,7 @@ Environment:
     A sentinel value returned from cpuid which is used to determine if
      VivienneVMM is already running on the local machine.
 */
-#define CFG_VVMM_SIGNATURE  ((int)'mmvv')
+#define CFG_VVMM_SIGNATURE      CFG_VIVIENNE_VMM_SIGNATURE
 
 /*
     Enable the VMCALL handler for the 'ping VMM' hypercall.

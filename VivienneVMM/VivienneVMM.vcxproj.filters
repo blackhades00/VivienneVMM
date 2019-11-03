@@ -21,6 +21,9 @@
     <Filter Include="HyperPlatform\Source Files">
       <UniqueIdentifier>{f694af98-f485-44ac-864c-f5a2e0ca5d6e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PareidoliaTriggerbot">
+      <UniqueIdentifier>{2f3fbb9a-5d60-48a5-86f8-6fb7ea35dbbc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.h">
@@ -106,6 +109,9 @@
     </ClInclude>
     <ClInclude Include="debug.h">
       <Filter>VivienneVMM\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\config.h">
+      <Filter>PareidoliaTriggerbot</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
